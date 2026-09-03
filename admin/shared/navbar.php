@@ -7,7 +7,9 @@
             <small class="text-muted">Welcome back, Admin</small>
         </div>
 
+        <div class="d-flex align-items-center">
 
+          
             <!-- Admin Dropdown -->
             <div class="dropdown">
 
@@ -18,7 +20,7 @@
                     aria-expanded="false"
                 >
 
-                    <span class="badge bg-secondary rounded-pill me-2">3</span>
+                    
 
                     <div
                         class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold"
@@ -68,4 +70,3 @@
 
     </div>
 </nav>
-
