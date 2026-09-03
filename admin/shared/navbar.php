@@ -7,19 +7,6 @@
             <small class="text-muted">Welcome back, Admin</small>
         </div>
 
-        <div class="d-flex align-items-center">
-
-            <div class="input-group me-3" style="width: 300px;">
-                <span class="input-group-text bg-light border-end-0">
-                    <i class="fas fa-search text-muted"></i>
-                </span>
-
-                <input
-                    type="text"
-                    class="form-control bg-light border-start-0"
-                    placeholder="Search for products or orders..."
-                >
-            </div>
 
             <!-- Admin Dropdown -->
             <div class="dropdown">
