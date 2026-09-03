@@ -4,7 +4,7 @@
         <span class="fs-5 fw-bold">LAPTOP STORE</span>
     </a>
     <hr>
-    
+
     <small class="text-muted fw-bold px-2 mb-2" style="font-size: 0.75rem;">DASHBOARD</small>
     <ul class="nav nav-pills flex-column mb-3">
         <li class="nav-item">
@@ -62,17 +62,17 @@
     <small class="text-muted fw-bold px-2 mb-2" style="font-size: 0.75rem;">STORE</small>
     <ul class="nav nav-pills flex-column mb-3">
         <!-- Orders Dropdown -->
-                <li class="nav-item mb-1">
-                    <a class="nav-link text-white d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#ordersMenu" role="button" aria-expanded="false" aria-controls="ordersMenu">
-                        <span><i class="fas fa-shopping-cart me-2"></i> Orders</span>
-                        <i class="fas fa-chevron-down small"></i>
-                    </a>
-                    <div class="collapse ps-3 mt-1" id="ordersMenu">
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-1"><a href="/laptop-store/admin/index.php" class="nav-link text-white-50 py-1"><i class="fas fa-list me-2"></i> All Orders</a></li>
-                        </ul>
-                    </div>
-                </li>
+        <li class="nav-item mb-1">
+            <a class="nav-link text-white d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#ordersMenu" role="button" aria-expanded="false" aria-controls="ordersMenu">
+                <span><i class="fas fa-shopping-cart me-2"></i> Orders</span>
+                <i class="fas fa-chevron-down small"></i>
+            </a>
+            <div class="collapse ps-3 mt-1" id="ordersMenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-1"><a href="/laptop-store/admin/orders/index.php" class="nav-link text-white-50 py-1"><i class="fas fa-list me-2"></i> All Orders</a></li>
+                </ul>
+            </div>
+        </li>
         <!-- Clients Dropdown -->
         <li class="nav-item mb-1">
             <a class="nav-link text-white d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#clientsMenu" role="button" aria-expanded="false" aria-controls="clientsMenu">
@@ -134,8 +134,7 @@
 
         <a
             href="/laptop-store/admin/contact/index.php"
-            class="nav-link"
-        >
+            class="nav-link">
             <i class="bi bi-envelope me-2"></i>
             Contacts
         </a>
