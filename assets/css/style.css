@@ -1,0 +1,143 @@
+:root {
+    --sidebar-width: 240px;
+    --sidebar-bg: #111827;
+    --main-bg: #f3f4f6;
+    --accent-blue: #2563eb;
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Sidebar Styling */
+.admin-sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--sidebar-bg);
+    color: #9ca3af;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.admin-sidebar .brand {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 1.25rem 1.25rem;
+    border-bottom: 1px solid #1f2937;
+}
+
+.admin-sidebar .nav-section {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    padding: 1.25rem 1.25rem 0.5rem;
+    text-transform: uppercase;
+}
+
+.admin-sidebar .nav-link {
+    color: #9ca3af;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+    color: #ffffff;
+    background-color: #1f2937;
+}
+
+.admin-sidebar .nav-link.active {
+    background-color: var(--accent-blue);
+}
+
+/* Main Layout */
+.admin-wrapper {
+    margin-left: var(--sidebar-width);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-main {
+    padding: 1.75rem 2rem;
+    flex: 1;
+}
+
+/* Header Navbar */
+.admin-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.85rem 2rem;
+}
+
+/* Cards & Components */
+.stat-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.stat-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.content-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+
+/* الحاوية الرئيسية للكروت */
+.categories-scroll-wrapper {
+  display: flex;
+  overflow-x: auto; /* لتفعيل السكرول الأفقي */
+  scroll-snap-type: x mandatory; /* لجعل الكروت تقف في مكانها عند السحب */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin; /* شكل سكرول لطيف للمتصفحات */
+  scrollbar-color: #0d6efd #1a1a2e;
+}
+
+/* تخصيص شكل الـ Scrollbar متوافق مع Chrome/Safari */
+.categories-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.categories-scroll-wrapper::-webkit-scrollbar-track {
+  background: #1a1a2e;
+  border-radius: 10px;
+}
+.categories-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 10px;
+}
+
+/* حجم كل كارت مثبت عشان يظهروا جنب بعض */
+.category-card-item {
+  flex: 0 0 320px; /* عرض الكارت الثابت 320px */
+  scroll-snap-align: start; /* لتحديد نقطة وقوف الكارت عند السكرول */
+}
+
+
+
+.max-h-100 {
+  max-height: 100%;
+}
