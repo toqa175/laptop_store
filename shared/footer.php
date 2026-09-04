@@ -15,7 +15,7 @@
                 </a>
                 
                 <p class="text-secondary small opacity-75 mb-4" style="max-width: 320px; line-height: 1.6;">
-                    Your trusted destination for premium laptops. We test, curate, and deliver the best machines from the world's leading manufacturers.
+                   Your top choice for high-end laptops. We rigorously test, select, and provide the finest systems from top global brands
                 </p>
 
                 <!-- Social Icons -->
